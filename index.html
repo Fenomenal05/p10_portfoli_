@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Maria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Candal&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            box-sizing: border-box; 
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            color: black;
+            font-family: "Candal", sans-serif;
+            font-weight: 400;
+            overflow: hidden; 
+            background-color: #f0f0f0;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+            word-break: break-all; 
+        }
+
+        #container {
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+            grid-template-columns: 1fr 1fr 1fr; 
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        #amarillo {
+            grid-area: 2/2/3/3; 
+            background-color: rgb(237, 80, 122);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            line-height: 20px;
+        }
+        h2 {
+            font-size: 2em;
+            margin: 10px 0;
+        }
+        #titulo-abajo {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
+        div[id^="practica"] {
+            background: url("assets/Frame\ 3\ \(1\).svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: 1px solid #ddd; 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+            padding: 20px;
+        }
+
+        .practicas1 {
+            font-size: 4em;
+            font-weight: 600;
+            margin-top: -20px;
+        }
+
+        .practicas2 {
+            font-size: 1.2em;
+            font-weight: 300;
+            margin-top: -50px;
+            align-self: flex-end; 
+            text-align: right;
+        }
+
+        .practicas3 {
+            font-size: 0.8em;
+            font-weight: 300;
+            margin-top: auto; 
+            text-align: right;
+        }
+
+        @media screen and (max-width: 1024px) {
+            body {
+                overflow-y: auto; 
+            }
+
+            #container {
+                height: auto; 
+                grid-template-columns: 1fr 1fr; 
+                grid-template-rows: auto; 
+            }
+
+            #amarillo {
+                grid-area: auto; 
+                grid-column: 1 / -1; 
+                grid-row: 1; 
+                min-height: 300px;
+            }
+
+            div[id^="practica"] {
+                min-height: 250px; 
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                overflow-y: auto;
+            }
+
+            #container {
+                height: auto;
+                display: flex; 
+                flex-direction: column;
+            }
+
+            #amarillo {
+                min-height: 250px;
+                order: -1; 
+            }
+
+            h1 { font-size: 2.5em; }
+            h2 { font-size: 1.5em; }
+
+            div[id^="practica"] {
+                min-height: 200px;
+                padding: 15px;
+            }
+
+            .practicas1 { font-size: 3em; }
+            .practicas2 { font-size: 1em; }
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+     <div id="container">
+        
+        <div id="amarillo">
+            <h1>PORTFOLI</h1>
+            <h2>MARIA</h2>
+            <div id="titulo-abajo">2º Diseño Gráfico</div>
+        </div>
+
+        <div id="practica1">
+            <div class="practicas1">1</div>
+            <div class="practicas2">Edició de codi i disseny</div>
+            <div class="practicas3">
+                <a href="https://fenomenal05.github.io/p1/">Ver proyecto</a>
+            </div>
+        </div>
+
+         <div id="practica2">
+            <div class="practicas1">2</div>
+            <div class="practicas2">Linktree</div>
+            <div class="practicas3">
+                <a href="https://fenomenal05.github.io/p2dg2526/">Ver Proyecto</a>
+            </div>
+        </div>
+
+          <div id="practica3">
+            <div class="practicas1">3</div>
+            <div class="practicas2">Linktree_css</div>
+            <div class="practicas3">
+                <a href="https://fenomenal05.github.io/p3_festival/">Ver Proyecto</a>
+            </div>
+        </div>
+
+         <div id="practica4">
+            <div class="practicas1">4</div>
+            <div class="practicas2">Box model i css units</div>
+            <div class="practicas3">Ver Proyecto</div>
+        </div>
+
+         <div id="practica5">
+            <div class="practicas1">5</div>
+            <div class="practicas2">Selectors bàsics<br>pseudeselectors</div>
+            <div class="practicas3">
+                <a href="https://fenomenal05.github.io/p5_poema_/">Ver Proyecto</a>
+            </div>
+        </div>
+
+        <div id="practica6">
+            <div class="practicas1">6</div>
+            <div class="practicas2">Display_grid_template</div>
+             <div class="practicas3">
+                <a href="https://fenomenal05.github.io/p8_display_grid_template_/">Ver Proyecto</a>
+            </div>
+        </div>
+
+        <div id="practica7">
+            <div class="practicas1">7</div>
+            <div class="practicas2">Grids_from_graphic</div>
+            <div class="practicas3">
+                <a href="https://fenomenal05.github.io/p7_grids_from_graphic/">Ver Proyecto</a>
+            </div>
+        </div>
+
+        <div id="practica8">
+            <div class="practicas1">8</div>
+            <div class="practicas2">Grid_calendari</div>
+            <div class="practicas3">
+                <a href="https://github.com/Fenomenal05/p9_calendari_mar-/blob/main/Fenollosa_Cambra_Maria_calendario_marzo.pdf">Ver Proyecto</a>
+            </div>
+        </div>
+
+    </div>
+    </main>
+</body>
+</html>
